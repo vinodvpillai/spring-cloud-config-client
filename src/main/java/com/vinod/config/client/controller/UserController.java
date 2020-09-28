@@ -15,6 +15,10 @@ public class UserController {
      * Note: To get updated property need to call actuator refresh endpoint.
      *
      * POST localhost:8080/actuator/refresh
+     *
+     * RabbitMQ : To get updated property for all the services simply call actuator bus refresh endpoint.
+     *
+     * POST localhost:8080/actuator/bus-refresh
      */
     @Value("${db.connectionUrl}")
     private String dbConnectionUrl;
