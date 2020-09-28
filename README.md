@@ -5,7 +5,7 @@ The client applications (Config Clients) will retrieve the configurations from t
 Config Clients are connected to each other through a Spring Cloud Bus. Here I have used RabbitMQ as Spring Cloud message broker to broadcast events across all connected clients.
 
 Actuator refresh endpoint for individual service refresh:
-POST localhost:8080/actuator/refresh
+  POST localhost:8080/actuator/refresh
 
-Refresh endpoint for all service refresh using cloud bus:
-POST localhost:8080/actuator/bus-refresh
+Refresh endpoint for all service refresh using cloud bus: 
+  POST localhost:8080/actuator/bus-refresh
